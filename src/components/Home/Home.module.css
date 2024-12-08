@@ -1,0 +1,252 @@
+.movieImage {
+  width: 100%;
+  height: 290px;
+  border-bottom: 3px solid #f0d1a5;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.movieGallery {
+  display: flex;
+  max-width: 1300px;
+   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #94c751;
+  border-radius: 4px;
+  box-shadow: 0 0.3em 1em #000;
+  border: 5px solid #f1dbba;
+  
+}
+
+.movieInfo {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(114, 17, 17);
+  width: 100%; 
+}
+
+.movieName{
+  
+    display: flex;
+    padding: 10px;
+  
+    align-items: center;
+    justify-content: center;
+}
+
+.wardName{
+  color:green;
+  background-color:#c2e297;
+  padding: 6px;
+  border: 2px solid #f1dbba;
+  border-radius: 4px;
+  box-shadow: inset 0 0 5px 2.5px rgba(0, 0, 0, 0.3);
+}
+
+.movieGalleryLabel {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 8px;
+}
+
+.movieGalleryAnimation{
+  animation-name: scale;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.movieGalleryTitle{
+font-weight: 900;
+  font-size: 36px;
+ color: rgb(75, 177, 117);
+  font-family: 'Comic Sans MS';
+      
+      text-shadow: 2px 2px 2px #000000;
+     
+}
+
+.movieGallerySlogan{
+  margin-top: 5px;
+  display:block;
+  text-align: center;
+font-weight: 900;
+  color: rgb(75, 177, 117);
+  font-family: "DM Sans";
+  font-family: 'Comic Sans MS';
+   text-shadow: 1px 1px 1px #000000; 
+}
+
+
+.movieItem {
+  width:290px;
+  background-color: #94c751;
+  border: 3px solid #f1dbba;
+  color: #f1dbba;
+  font-weight: 700;
+  border-radius: 10px;
+  font-family: 'Comic Sans MS';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.frame{
+  background-color: #C2E297;
+  width: 500px;
+  height: 500px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 30px;
+border:5px solid #f1dbba;
+box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
+position: relative;
+}
+
+
+
+
+.movieItem:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.3),
+    0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 10px 12px -6px rgba(0, 0, 0, 0.4);
+}
+
+.galleryFrame{
+  position: relative;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.catName{
+  background-color: rgb(235, 144, 25);
+  border: 1px solid rgb(114, 17, 17);
+  border-radius: 4px;
+  padding: 2px;
+  margin-top: 3px;
+}
+
+.townOfficialsIntro {
+  
+  text-align: center;
+  width: 295px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #94c751;
+  border:3px solid #f1dbba;
+  border-radius: 4px;
+  padding: 3px;
+  font-weight: 700;
+  color: green;
+  font-family: 'Comic Sans MS';
+  margin-bottom: 5px;
+}
+
+.catOverlay {
+    position: relative;
+    
+}
+
+.catWardDescription {
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: calc(28/18);
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:3px solid #f1dbba;
+    box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    color: green;
+    background-color: #C2E297;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 30px;
+    transform: translateX(0%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 1250ms cubic-bezier(0.165, 0.84, 0.44, 1),
+                opacity 1250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                visibility 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+                pointer-events: none;
+}
+
+.frame:nth-child(1) {
+  transition: transform 1250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.frame:nth-child(2) {
+  transition: transform 1250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.frame:nth-child(3) {
+  transition: transform 1250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+
+.frame:nth-child(1):hover .catWardDescription,
+.frame:nth-child(1):hover .catWardDescription {
+    transform: translateX(200%);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.frame:nth-child(2):hover .catWardDescription,
+.frame:nth-child(2):hover .catWardDescription {
+    transform: translateX(-200%);
+    opacity: 1;
+    visibility: visible;
+}
+
+.frame:nth-child(1):hover .catWardDescription,
+.frame:nth-child(1):hover .catWardDescription {
+    transform: translateX(200%);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.frame:nth-child(3):hover .catWardDescription,
+.frame:nth-child(3):hover .catWardDescription {
+    transform: translateY(-150%);
+    opacity: 1;
+    visibility: visible;
+}
